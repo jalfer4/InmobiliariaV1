@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_propiedad">
+
+    <fragment
+        android:id="@+id/nav_propiedad"
+        android:name="com.example.inmobiliariav1.ui.propiedad.PropiedadFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_propiedad" >
+        <action
+            android:id="@+id/action_nav_propiedad_to_detallePropiedad"
+            app:destination="@id/detallePropiedad" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_inquilino"
+        android:name="com.example.inmobiliariav1.ui.inquilino.InquilinoFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_inquilino" />
+
+    <fragment
+        android:id="@+id/nav_pagos"
+        android:name="com.example.inmobiliariav1.ui.pagos.PagosFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_cerrar" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.inmobiliariav1.ui.perfil.PerfilFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_contrato"
+        android:name="com.example.inmobiliariav1.ui.contrato.ContratoFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_pagos" />
+
+    <fragment
+        android:id="@+id/nav_cerrar"
+        android:name="com.example.inmobiliariav1.ui.cerrar.CerrarFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_cerrar" />
+    <fragment
+        android:id="@+id/detallePropiedad"
+        android:name="com.example.inmobiliariav1.ui.propiedad.DetallePropiedad"
+        android:label="fragment_detalle_propiedad"
+        tools:layout="@layout/fragment_detalle_propiedad" />
+</navigation>
