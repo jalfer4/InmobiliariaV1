@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,36 +10,47 @@
 
     <TextView
         android:id="@+id/tvPropiedad"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="56dp"
         android:background="#4C374A"
         android:padding="10dp"
         android:text="Grand Palace, Bangkok"
         android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/cbestaDisponible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="CheckBox" />
+        android:layout_marginTop="24dp"
+        android:text="CheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropiedad" />
 
     <Button
         android:id="@+id/btnAceptar"
-        android:layout_width="136dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="50dp"
-        android:text="Aceptar" />
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="84dp"
+        android:text="Aceptar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropiedad" />
 
     <Button
         android:id="@+id/btnCancelar"
-        android:layout_width="136dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="200dp"
-        android:text="Cancelar" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="76dp"
+        android:text="Cancelar"
+        app:layout_constraintStart_toEndOf="@+id/btnAceptar"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropiedad" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,11 @@
         android:id="@+id/nav_pagos"
         android:name="com.example.inmobiliariav1.ui.pagos.PagosFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_cerrar" />
+        tools:layout="@layout/fragment_cerrar" >
+        <action
+            android:id="@+id/action_nav_pagos_to_detallesPagosFragment"
+            app:destination="@id/detallesPagosFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_perfil"
@@ -37,7 +41,11 @@
         android:id="@+id/nav_contrato"
         android:name="com.example.inmobiliariav1.ui.contrato.ContratoFragment"
         android:label="@string/menu_share"
-        tools:layout="@layout/fragment_pagos" />
+        tools:layout="@layout/fragment_pagos" >
+        <action
+            android:id="@+id/action_nav_contrato_to_detalleContratoFragment"
+            app:destination="@id/detalleContrato" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_cerrar"
@@ -49,4 +57,14 @@
         android:name="com.example.inmobiliariav1.ui.propiedad.DetallePropiedad"
         android:label="fragment_detalle_propiedad"
         tools:layout="@layout/fragment_detalle_propiedad" />
+    <fragment
+        android:id="@+id/detalleContrato"
+        android:name="com.example.inmobiliariav1.ui.contrato.DetalleContrato"
+        android:label="fragment_detalle_contrato"
+        tools:layout="@layout/fragment_detalle_contrato" />
+    <fragment
+        android:id="@+id/detallesPagosFragment"
+        android:name="com.example.inmobiliariav1.ui.pagos.DetallesPagosFragment"
+        android:label="fragment_detalles_pagos"
+        tools:layout="@layout/fragment_detalles_pagos" />
 </navigation>

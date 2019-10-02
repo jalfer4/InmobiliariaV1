@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="inquilinos">
+        <item>Nombre:<b>Tony, Stark</b>  Telefono:0987555677  Email:tstark@gmail.com</item>
+        <item>Nombre:<b>Peter Parker</b> Telefono:066522115  Email:pparker@gmail.com</item>
+        <item>Nombre:<b>Carol Danvers</b> Telefono:02156678  Email:cdamvers@gmai.com</item>
+        <item>Nombre:<b>Natalia Romanoff</b> Telefono:7800022  Email:nromanoff@gmail.com</item>
+        <item>Nombre:<b>Scott Edward Harris Lang</b> Telefono:0987555677  Email:slang</item>
+    </string-array>
+</resources>
