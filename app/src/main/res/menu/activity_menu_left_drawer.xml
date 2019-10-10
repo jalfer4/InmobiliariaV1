@@ -6,23 +6,23 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_propiedad"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_lnr_apartment"
             android:title="Propiedad" />
         <item
             android:id="@+id/nav_inquilino"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_lnr_users"
             android:title="Inquilino" />
         <item
             android:id="@+id/nav_pagos"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_lnr_layers"
             android:title="Pagos" />
         <item
             android:id="@+id/nav_contrato"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_lnr_license"
             android:title="Contrato" />
         <item
             android:id="@+id/nav_perfil"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_lnr_user"
             android:title="Perfil" />
     </group>
 
@@ -30,7 +30,7 @@
         <menu>
             <item
                 android:id="@+id/nav_cerrar"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_lnr_cross_circle"
                 android:title="Cerrar" />
         </menu>
     </item>

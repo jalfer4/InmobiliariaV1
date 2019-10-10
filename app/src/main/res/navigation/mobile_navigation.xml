@@ -55,16 +55,16 @@
     <fragment
         android:id="@+id/detallePropiedad"
         android:name="com.example.inmobiliariav1.ui.propiedad.DetallePropiedad"
-        android:label="fragment_detalle_propiedad"
+        android:label="Detalle de Propiedad"
         tools:layout="@layout/fragment_detalle_propiedad" />
     <fragment
         android:id="@+id/detalleContrato"
         android:name="com.example.inmobiliariav1.ui.contrato.DetalleContrato"
-        android:label="fragment_detalle_contrato"
+        android:label="Detalle de Contrato"
         tools:layout="@layout/fragment_detalle_contrato" />
     <fragment
         android:id="@+id/detallesPagosFragment"
         android:name="com.example.inmobiliariav1.ui.pagos.DetallesPagosFragment"
-        android:label="fragment_detalles_pagos"
+        android:label="Detalle de Pagos"
         tools:layout="@layout/fragment_detalles_pagos" />
 </navigation>
